@@ -1,0 +1,17 @@
+.home-container {
+    margin-top: 20px;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;  
+}
+.buy-btn {
+    color: #ff4000;
+    background-color: #222831;
+}
+.banner-img img{
+    border-radius: 7px;
+}
