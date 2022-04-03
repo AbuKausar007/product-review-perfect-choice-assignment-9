@@ -1,0 +1,51 @@
+[
+  {
+    "_id": "60d6dfd866b62508b45ee14b",
+    "description": "It feels amazing to know that there is an increased demand for your product, but customer experience and satisfaction are consequential for long-lasting business growth.",
+    "name": "Arvy Ahmed",
+    "rating": "Rating 4.5",
+    "imageURL": "https://i.ibb.co/gWHb5GQ/ipod.jpg"
+  },
+  {
+    "_id": "60d6e01966b62508b45ee14c",
+    "description": "To earn the respect (and eventually love) of your customers, you first have to respect those customers. That is why Golden Rule behavior is embraced by most of the winning companies.",
+    "name": "Mehraab Ahmed",
+    "rating": "Rating 4.2",
+    "imageURL": "https://i.ibb.co/WkJhhyS/apple-pippin.jpg"
+  },
+  {
+    "_id": "60d728cf66b62508b45ee14d",
+    "description": "Thank the guests for coming! You may say it's none of your business, but it's still part of your job.",
+    "name": "Arif Rahman",
+    "rating": "Rating 4.0",
+    "imageURL": "https://i.ibb.co/VTnxsNd/i-Pod-hifi.jpg"
+  },
+  {
+    "_id": "60d7290866b62508b45ee14e",
+    "description": "A good Usherette renders ushering services; not her body, not her address, not her number.",
+    "name": "Tayeb Hussain",
+    "rating": "Rating 4.6",
+    "imageURL": "https://i.ibb.co/JFygJn5/apple-newtonpad.jpg"
+  },
+  {
+    "_id": "60d7293a66b62508b45ee14f",
+    "description": "The best action you can take as a business professional is to treat each client as a valued customer.",
+    "name": "Noman Abdullah",
+    "rating": "Rating 4.2",
+    "imageURL": "https://i.ibb.co/SyxX5d9/apple-quiqk-take.jpg"
+  },
+  {
+    "_id": "60d729bb66b62508b45ee150",
+    "description": "Your customer service opens up unique opportunities to offer an excellent customer experience",
+    "name": "Naim Hussain",
+    "rating": "Rating 4.0",
+    "imageURL": "https://i.ibb.co/g7SGgZd/Apple-20th-anniversary.jpg"
+  },
+  {
+    "_id": "60d738af0798000022d7102c",
+    "description": "Your marketing plan is not as important as how you plan to invest in the happiness of your customers.",
+    "name": "Salem Bin Raj",
+    "rating": "Rating 4.3",
+    "imageURL": "https://i.ibb.co/k64mr2V/macintoshdh.jpg"
+  }
+]
