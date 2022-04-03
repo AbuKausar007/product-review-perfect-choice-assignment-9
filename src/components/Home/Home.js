@@ -38,7 +38,7 @@ const Home = () => {
       </section>
       <section>
         <h1 className="text-5xl font-semibold py-16">Customer Reviews.</h1>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-3 gap-8 w-4/5 m-auto">
           {reviews.map((review) => (
             <Review key={review._id} review={review}></Review>
           ))}
