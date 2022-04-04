@@ -5,6 +5,7 @@ import Review from "../Review/Review";
 
 const Home = () => {
   const [reviews, setReviews] = useState([]);
+  const threeReviews = reviews.slice(0, 3);
   console.log(reviews);
   useEffect(() => {
     fetch("review.json")
@@ -39,10 +40,13 @@ const Home = () => {
       <section>
         <h1 className="text-5xl font-semibold py-16">Customer Reviews.</h1>
         <div className="grid grid-cols-3 gap-8 w-4/5 m-auto">
-          {reviews.map((review) => (
+          {threeReviews.map((review) => (
             <Review key={review._id} review={review}></Review>
           ))}
         </div>
+        <button className="all-reviews-btn text-2xl font-bold mt-16 mb-16 rounded-lg  px-5 mx-auto py-2">
+          See All Reviews
+        </button>
       </section>
     </div>
   );
