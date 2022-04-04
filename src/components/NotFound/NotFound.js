@@ -13,7 +13,7 @@ const NotFound = () => {
           You are trying to access non existing page!
         </h1>
         <h2 className="text-3xl py-6 text-orange-500 font-bold">
-          Your better go to home page.
+          Better you go to home page.
         </h2>
         <button
           onClick={() => navigate("/")}
