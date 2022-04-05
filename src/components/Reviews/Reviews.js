@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ReviewContext } from "../../App";
+import AllReviews from "../AllReviews/AllReviews";
 
 const Reviews = () => {
+  const [reviews] = useContext(ReviewContext);
+
   return (
-    <div>
-      <h1>It's reviews</h1>
+    <div className="grid grid-cols-3 gap-8 w-4/5 m-auto">
+      {reviews.map((review) => (
+        <AllReviews key={review._id} review={review}></AllReviews>
+      ))}
     </div>
   );
 };

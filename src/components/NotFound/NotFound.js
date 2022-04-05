@@ -1,11 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import errorImg from "../../images/error.jpg";
 import "./NotFound.css";
 
 const NotFound = () => {
   const navigate = useNavigate();
-
+  const location = useLocation();
+  console.log(location);
   return (
     <div className="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-12">
       <div className="flex flex-col content-center justify-center">

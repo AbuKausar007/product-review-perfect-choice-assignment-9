@@ -1,17 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Home.css";
 import img from "../../images/accessories.jpg";
 import Review from "../Review/Review";
+import { ReviewContext } from "../../App";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const [reviews, setReviews] = useState([]);
+  const navigate = useNavigate();
+  const [reviews, setReviews] = useContext(ReviewContext);
   const threeReviews = reviews.slice(0, 3);
-  console.log(reviews);
+
   useEffect(() => {
     fetch("review.json")
       .then((res) => res.json())
       .then((data) => setReviews(data));
-  }, []);
+  }, [setReviews]);
   return (
     <div>
       <section className="home-container m-auto">
@@ -44,7 +47,10 @@ const Home = () => {
             <Review key={review._id} review={review}></Review>
           ))}
         </div>
-        <button className="all-reviews-btn text-2xl font-bold mt-16 mb-16 rounded-lg  px-5 mx-auto py-2">
+        <button
+          onClick={() => navigate("/reviews")}
+          className="all-reviews-btn text-2xl font-bold mt-16 mb-16 rounded-lg  px-5 mx-auto py-2"
+        >
           See All Reviews
         </button>
       </section>
