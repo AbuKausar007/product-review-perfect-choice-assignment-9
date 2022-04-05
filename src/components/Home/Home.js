@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import "./Home.css";
 import img from "../../images/accessories.jpg";
 import Review from "../Review/Review";
@@ -20,10 +20,10 @@ const Home = () => {
       <section className="home-container m-auto">
         <div className="">
           <h1 className="text-6xl text-left font-semibold font-sans ">
-            Your Perfect Choice!
+            Your <span className="orange-color">Perfect Choice!</span>
           </h1>
-          <h2 className="text-4xl text-left font-semibold font-sans py-5">
-            Believe In You.
+          <h2 className="text-6xl text-left font-semibold font-sans py-5">
+            <span className="orange-color">Believe</span> In You.
           </h2>
           <h3 className="text-xl text-justify py-8 ">
             Always Perform an Initial Brand Audit Before You Begin. Find Out
@@ -41,7 +41,9 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <h1 className="text-5xl font-semibold py-16">Customer Reviews.</h1>
+        <h1 className="text-5xl font-semibold py-16">
+          Customer <span className="orange-color">Reviews.</span>
+        </h1>
         <div className="grid grid-cols-3 gap-8 w-4/5 m-auto">
           {threeReviews.map((review) => (
             <Review key={review._id} review={review}></Review>
